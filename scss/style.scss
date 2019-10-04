@@ -1,5 +1,8 @@
-$primary-color: red;
+@import 'abstracts/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'components/button';
+@import 'layout/header';
+@import 'layout/footer';
 
-body {
-  background: $primary-color;
-}
+
