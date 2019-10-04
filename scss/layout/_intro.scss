@@ -1,0 +1,95 @@
+.intro {
+  display: flex;
+  width: 100%;
+
+  background: url("../../dist/assets/images/Intro/intro__baner.png");
+  background-repeat: no-repeat;
+  background-position: 82px 0;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 190px;
+  margin-left: 60px;
+}
+.intro__social {
+  position: relative;
+
+  font-size: 14px;
+  text-decoration: none;
+
+  transform: translate(-448%, 0%) rotate(90deg);
+  a {
+    font-family: $font-family-1;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 100px;
+    z-index: 1;
+
+    display: block;
+    width: 51px;
+    height: 1.5px;
+
+    background: $secondary-text-color;
+  }
+}
+
+.intro__title {
+  padding-bottom: 20px;
+
+  font-size: 40px;
+  line-height: 53px;
+  font-family: $font-family-5;
+  color: $white-text-color;
+  text-transform: uppercase;
+  span {
+    color: $secondary-text-color;
+  }
+}
+
+.intro__text {
+  padding-bottom: 41px;
+
+  font-size: 22px;
+  line-height: 30px;
+  font-family: $font-family-2;
+  color: $white-text-color;
+}
+
+.intro__buttons {
+  display: flex;
+  margin-bottom: 150px;
+}
+.intro__buttons-calc {
+  padding-right: 20px;
+}
+
+.intro__scrooll {
+  display: flex;
+  align-items: center;
+  width: 247px;
+  height: 97px;
+  margin-top: 655px;
+  margin-left: -656px;
+
+  text-align: center;
+
+  background-color: $primary-color;
+
+  p {
+    padding-right: 20px;
+    padding-left: 53px;
+
+    font-size: 14px;
+    font-family: $font-family-5;
+    color: $white-text-color;
+    text-transform: uppercase;
+  }
+}

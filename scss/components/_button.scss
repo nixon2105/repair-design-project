@@ -5,9 +5,23 @@
   font-size: 13px;
   font-family: $font-family-1;
   color: $white-text-color;
+  text-transform: uppercase;
 
   background: $secondary-text-color;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.button--intro {
+  width: 207px;
+  height: 51px;
+
+  background: transparent;
+  border: 2px solid $white-text-color;
+
+  &:hover {
+    background: $secondary-text-color;
+    border: 0;
+  }
 }
