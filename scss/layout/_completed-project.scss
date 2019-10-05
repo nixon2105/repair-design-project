@@ -1,0 +1,166 @@
+.section--project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 128px;
+  margin-left: 108px;
+}
+
+.project__title {
+  position: relative;
+
+  margin-bottom: 34px;
+
+  font-size: 27px;
+  line-height: 37px;
+  font-family: $font-family-5;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 53px;
+    left: 179px;
+    z-index: 1;
+
+    display: block;
+    width: 92px;
+    height: 1px;
+
+    background: $secondary-text-color;
+  }
+}
+
+.project__text {
+  margin-bottom: 42px;
+
+  font-size: 18px;
+  line-height: 29px;
+  font-family: $font-family-2;
+  color: $white-text-color;
+}
+
+.project__descr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.descr__item {
+  width: 50%;
+}
+
+.descr__item--title {
+  margin-bottom: 9px;
+
+  font-size: 18px;
+  line-height: 25px;
+  font-family: $font-family-5;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}
+
+.descr__item--content {
+  margin-bottom: 34px;
+
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $font-family-2;
+  color: $white-text-color;
+}
+
+
+.slider {
+  display: flex;
+  width: 60%;
+  margin-left: 55px;
+}
+
+.slider__main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 59px;
+}
+
+.nav__item--slider {
+  margin: 0 34px;
+
+  font-size: 14px;
+  line-height: 19px;
+  font-family: $font-family-5;
+  color: $black-light-color;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    color: $secondary-text-color;
+    text-decoration: underline;
+  }
+}
+
+.slider__image {
+  margin-top: 53px;
+  margin-left: -31px;
+}
+
+.slider__next {
+  position: relative;
+
+  margin-top: 131px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 37%;
+  left: 32%;
+  z-index: 1;
+
+  display: block;
+  width: 55px;
+  height: 55px;
+
+  color: transparent;
+
+  background: $secondary-text-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.pagination {
+  margin-top: 40px;
+}
+
+.pagination__list {
+  display: flex;
+}
+
+.pagination__item {
+  margin: 0 10px;
+
+  font-size: 0;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4) {
+    width: 10px;
+    height: 10px;
+
+    color: transparent;
+
+    background-color: $black-light-color;
+    border-radius: 50%;
+  }
+}

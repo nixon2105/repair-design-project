@@ -1,7 +1,21 @@
 @import "abstracts/variables";
+
+//base
 @import "base/normalize";
 @import "base/typography";
+
+//components
 @import "components/button";
+
+//layout
 @import "layout/intro";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/completed-project";
+@import "layout/control";
+@import "layout/repair";
+@import "layout/building";
+@import "layout/measurement";
+@import "layout/desing-project";
+@import "layout/team";
+@import "layout/reviews";
