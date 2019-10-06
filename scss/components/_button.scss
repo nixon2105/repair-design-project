@@ -25,3 +25,18 @@
     border: 0;
   }
 }
+
+.button__submit {
+  width: 200px;
+  height: 51px;
+
+  font-size: 15px;
+  line-height: 26px;
+  font-family: $font-family-1;
+  text-align: center;
+  color: $white-text-color;
+  text-transform: uppercase;
+
+  background: $secondary-text-color;
+  border: none;
+}
