@@ -1,10 +1,13 @@
 .section--control {
   width: 100%;
   margin: 0 auto;
+  //   background: $primary-color;
 
-//   background: $primary-color;
-
-  background: linear-gradient(to top, $white-text-color 70%, $primary-color 30%);
+  background: linear-gradient(
+  to top,
+  $white-text-color 70%,
+  $primary-color 30%
+  );
 }
 
 .control {
@@ -13,7 +16,7 @@
   align-items: center;
 }
 
-.control__title {
+.section__title {
   font-size: 20px;
   line-height: 28px;
   font-family: $font-family-5;
@@ -22,9 +25,11 @@
   text-transform: uppercase;
 }
 
-.control__logo {
+.section__logo {
   margin-top: -20px;
   margin-bottom: 20px;
+
+  text-align: center;
 }
 
 .conrol__video {
@@ -147,11 +152,11 @@
   //   color: #000000;
   // }
 
-  input[type=checkbox] {
+  input[type="checkbox"] {
     display: none;
   }
 
-  input[type=checkbox] + label:before {
+  input[type="checkbox"] + label:before {
     content: "\2713";
 
     display: inline-block;
@@ -169,7 +174,7 @@
     transition: color ease 0.3s;
   }
 
-  input[type=checkbox]:checked + label:before {
+  input[type="checkbox"]:checked + label:before {
     color: #ffffff;
   }
 }
