@@ -1,0 +1,25 @@
+.section--gallery {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 237px;
+
+  background: url("../../dist/assets/images/Desing styles/bg.png") no-repeat;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__title {
+  font-size: 27px;
+  line-height: 37px;
+  font-family: $font-family-5;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}
