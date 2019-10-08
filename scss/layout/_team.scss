@@ -1,0 +1,27 @@
+.section--team {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 98px;
+
+  background: linear-gradient(
+  to top,
+  $primary-color 28%,
+  $white-text-color 72%
+  );
+}
+
+.section__title--team {
+  margin-bottom: 30px;
+
+  color: $white-text-color;
+}
+
+.section__text--team {
+  margin-top: 25px;
+
+  font-size: 20px;
+  line-height: 27px;
+  font-family: $font-family-2;
+  text-align: center;
+  color: $white-text-color;
+}
