@@ -204,13 +204,6 @@
   margin-left: 55px;
 }
 
-// .works__step {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   margin-top: 59px;
-// }
-
 .works__step--double {
   margin-top: 100px;
 }
@@ -263,4 +256,8 @@
 
 .step__num {
   border-bottom: 1px solid $secondary-text-color;
+}
+
+.works__photo {
+  margin-bottom: 98px;
 }
