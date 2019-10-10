@@ -714,30 +714,41 @@
     <div class="contacts">
       <div class="contacts__form">
           <h4 class="contacts__form-title">Have any questions?</h4>
-          <form class="" action="#" method="POST">
-            <div class="">
+          <form class="form__questions" action="#" method="POST">
+            <div class="form__data">
               <label for="text">Name</label>
               <input type="text" required placeholder="What is your name:" />
             </div>
-            <div class="">
+            <div class="form__data">
               <label for="tel">Phone</label>
               <input type="tel" required placeholder="Your phone number:" />
             </div>
-            <div class="">
+            <div class="form__data form__data--quest">
               <label for="tel">Question</label>
               <input type="tel" required placeholder="I want to know:" />
             </div>
-            <div class="">
-              <input class="number" id="num" type="checkbox" name="num" />
-              <label for="num">I agree to the processing of personal data</label>
+            <div class="form__data--checkbox">
+              <input class="number" id="quest" type="checkbox" name="num" />
+              <label for="quest">I agree to the processing of personal data</label>
             </div>
-            <button class="" type="submit">call the measures</button><br />
+            <button class="button__submit button__submit--center" type="submit">submit</button><br />
           </form>
-        
+      </div>
+      <div class="contacts__info">
+        <h3 class="contacts__address">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
+          Decorum Tel +7 (928) 768 32 29</h3>
+          <div class="contacts__social">
+            <div class="social__link"> <a  href=""><img src="assets/images/footer/email_icon.svg" alt=""></a></div>
+            <div class="social__link"> <a href="https://www.instagram.com"><img src="assets/images/footer/instagram-icon.svg" alt=""></a></div>
+          </div>
+          <div class="contacts__map"><img src="assets/images/footer/map.png" alt="map"></div>
       </div>
     </div>
   </div>
 </section>
-<footer class="footer"></footer>
+
+<footer class="footer">
+
+</footer>
 
 </html>
