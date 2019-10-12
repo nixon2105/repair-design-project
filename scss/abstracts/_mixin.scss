@@ -1,0 +1,12 @@
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+@mixin font {
+  font-style: normal;
+  font-weight: normal;
+}

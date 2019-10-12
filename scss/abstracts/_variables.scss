@@ -1,26 +1,35 @@
+//Background-color
 $primary-color: #252525;
+
+//Color-text
+$text-color--main: #e3b873;
+$text-color--light: #ffffff;
+$text-color--dark: #959595;
+$text-color--darken: #363636;
+$text-color--darkest: #181818;
+$text-color--dark-transparent: rgba(255, 255, 255, 0.3);
+
+//Fonts
+$font-family-1: "FuturaDemiC",
+Arial,
+sans-serif;
+$font-family-2: "FuturaBookC",
+Arial,
+sans-serif;
+$font-family-3: "FuturaMediumC",
+Arial,
+sans-serif;
+$font-family-4: "Proxima Nova",
+Arial,
+sans-serif;
+$font-family-5: "Yeseva One",
+Arial,
+sans-serif;
 $primary-text-color: #363636;
 $secondary-text-color: #e3b873;
 $white-text-color: #ffffff;
 $black-light-color: rgba(255, 255, 255, 0.3);
-$font-family-1: "FuturaDemiC",
-sans-serif;
-$font-family-2: "FuturaBookC",
-sans-serif;
-$font-family-3: "FuturaMediumC",
-sans-serif;
-$font-family-4: "Proxima Nova",
-sans-serif;
-$font-family-5: "Yeseva One",
-sans-serif;
 
-// @mixin flexbox {
-//     display: -webkit-box;
-//     display: -webkit-flex;
-//     display: -moz-flex;
-//     display: -ms-flexbox;
-//     display: flex;
-//  }
 
 //  .selector {
 //     @include flexbox;

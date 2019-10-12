@@ -4,13 +4,24 @@
 
   font-size: 13px;
   font-family: $font-family-1;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
 
-  background: $secondary-text-color;
+  background: $text-color--main;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: all 500ms ease;
+
+  @include font;
+
+  &:hover {
+    color: $text-color--light;
+
+    background: $text-color--main;
+    box-shadow: inset 0 0 0 3px $text-color--light;
+  }
 }
 
 .button--intro {
