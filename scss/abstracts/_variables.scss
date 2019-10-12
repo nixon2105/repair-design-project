@@ -25,12 +25,24 @@ sans-serif;
 $font-family-5: "Yeseva One",
 Arial,
 sans-serif;
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max-1: 375px;
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Large tablets and desktops
+$screen-xl-max: 1200px;
+
+///old
 $primary-text-color: #363636;
 $secondary-text-color: #e3b873;
 $white-text-color: #ffffff;
 $black-light-color: rgba(255, 255, 255, 0.3);
-
-
-//  .selector {
-//     @include flexbox;
-//  }
