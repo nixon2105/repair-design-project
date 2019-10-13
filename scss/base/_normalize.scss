@@ -89,6 +89,7 @@ video {
 // Links
 a {
   text-decoration: none;
+
   &:active,
   &:hover {
     outline: 0;
@@ -119,21 +120,27 @@ h6 {
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
 :focus {
   outline: 0;
 }
 
-img,
+img {
+  height: auto;
+}
+
 audio,
 video {
   max-width: 100%;
   height: auto;
 }
+
 audio,
 canvas,
 iframe,
@@ -142,6 +149,7 @@ img,
 svg {
   vertical-align: middle;
 }
+
 iframe {
   border: 0;
 }
@@ -156,8 +164,10 @@ textarea {
      -moz-box-shadow: none;
           box-shadow: none;
 
-  resize: none; /*remove the resize handle on the bottom right*/
+  resize: none;
+  /*remove the resize handle on the bottom right*/
 }
+
 input,
 textarea,
 select,
@@ -169,6 +179,7 @@ button {
   border: none;
   outline: none;
 }
+
 button,
 input {
   line-height: normal;
@@ -179,6 +190,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 td,
 th {
   padding: 0;

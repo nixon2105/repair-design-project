@@ -1,14 +1,16 @@
 .section--project {
-  display: flex;
   justify-content: space-between;
+
+  @include flexbox;
 }
 
 .project {
-  display: flex;
   flex-direction: column;
   width: 30%;
   margin-top: 128px;
   margin-left: 108px;
+
+  @include flexbox;
 }
 
 .project__title {
@@ -19,8 +21,10 @@
   font-size: 27px;
   line-height: 37px;
   font-family: $font-family-5;
-  color: $secondary-text-color;
+  color: $text-color--main;
   text-transform: uppercase;
+
+  @include font;
 
   &:after {
     content: "";
@@ -33,7 +37,7 @@
     width: 92px;
     height: 1px;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
   }
 }
 
@@ -43,13 +47,16 @@
   font-size: 18px;
   line-height: 29px;
   font-family: $font-family-2;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 }
 
 .project__descr {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include flexbox;
 }
 
 .descr__item {
@@ -62,8 +69,10 @@
   font-size: 18px;
   line-height: 25px;
   font-family: $font-family-5;
-  color: $secondary-text-color;
+  color: $text-color--main;
   text-transform: uppercase;
+
+  @include font;
 }
 
 .descr__item--content {
@@ -72,19 +81,24 @@
   font-size: 15px;
   line-height: 20px;
   font-family: $font-family-2;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 }
 
 .slider {
-  display: flex;
   width: 60%;
   margin-left: 55px;
+  overflow: hidden;
+
+  @include flexbox;
 }
 
 .slider__main {
-  display: flex;
   flex-wrap: wrap;
   margin-top: 59px;
+
+  @include flexbox;
 }
 
 .nav__item--slider {
@@ -93,15 +107,51 @@
   font-size: 14px;
   line-height: 19px;
   font-family: $font-family-5;
-  color: $black-light-color;
+  color: $text-color--dark-transparent;
+
+  cursor: pointer;
+
+  @include font;
 
   &:first-child {
     margin-left: 0;
   }
 
+  &:after {
+    content: "";
+
+    display: block;
+    width: 0;
+    height: 1.5px;
+
+    background-color: $text-color--main;
+
+    -webkit-transition: width 0.3s ease-in-out;
+            transition: width 0.3s ease-in-out;
+
+    -moz--transition: width 0.3s ease-in-out;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
   &:hover {
-    color: $secondary-text-color;
-    text-decoration: underline;
+    color: $text-color--main;
+  }
+}
+
+.nav__item--slider-active {
+  color: $text-color--main;
+
+  &:after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 1.5px;
+
+    background-color: $text-color--main;
   }
 }
 
@@ -119,7 +169,7 @@
 .slick-arrow {
   position: absolute;
   top: 37%;
-  left: 32%;
+  left: 7%;
   z-index: 1;
 
   display: block;
@@ -128,9 +178,16 @@
 
   color: transparent;
 
-  background: $secondary-text-color;
+  background: $text-color--main;
   border-radius: 50%;
+  box-shadow: 0 0 15px $color-shadow;
   cursor: pointer;
+
+  &:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 .pagination {
@@ -138,7 +195,7 @@
 }
 
 .pagination__list {
-  display: flex;
+  @include flexbox;
 }
 
 .pagination__item {
@@ -146,11 +203,12 @@
 
   font-size: 0;
 
+  cursor: pointer;
+
   &:first-child {
     margin-left: 0;
   }
 
-  &:nth-child(2),
   &:nth-child(3),
   &:nth-child(4) {
     width: 10px;
@@ -158,7 +216,22 @@
 
     color: transparent;
 
-    background-color: $black-light-color;
+    background-color: $text-color--dark-transparent;
     border-radius: 50%;
   }
+
+  &:nth-child(3):hover,
+  &:nth-child(4):hover {
+    background-color: #ffffff;
+  }
+}
+
+.pagination__item--active {
+  width: 10px;
+  height: 10px;
+
+  color: transparent;
+
+  background-color: #ffffff;
+  border-radius: 50%;
 }
