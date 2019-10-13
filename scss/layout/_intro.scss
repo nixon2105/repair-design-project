@@ -1,5 +1,4 @@
-.intro {
-  display: flex;
+ .section--intro {
   width: 100%;
 
   background: url("../../dist/assets/images/Intro/intro__baner.png");
@@ -7,12 +6,18 @@
   background-position: 82px 0;
 }
 
+.intro {
+  @include flexbox;
+}
+
 .intro__content {
-  display: flex;
   flex-direction: column;
   margin-top: 190px;
   margin-left: 60px;
+
+  @include flexbox;
 }
+
 .intro__social {
   position: relative;
 
@@ -20,10 +25,13 @@
   text-decoration: none;
 
   transform: translate(-448%, 0%) rotate(90deg);
+
   a {
     font-family: $font-family-1;
-    color: $secondary-text-color;
+    color: $text-color--main;
     text-transform: uppercase;
+
+    @include font;
   }
 
   &:after {
@@ -37,7 +45,7 @@
     width: 51px;
     height: 1.5px;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
   }
 }
 
@@ -47,10 +55,13 @@
   font-size: 40px;
   line-height: 53px;
   font-family: $font-family-5;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
+
+  @include font;
+
   span {
-    color: $secondary-text-color;
+    color: $text-color--main;
   }
 }
 
@@ -60,19 +71,23 @@
   font-size: 22px;
   line-height: 30px;
   font-family: $font-family-2;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 }
 
 .intro__buttons {
-  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 150px;
+
+  @include flexbox;
 }
-.intro__buttons-calc {
+
+.intro__buttons--calc {
   padding-right: 20px;
 }
 
-.intro__scrooll {
-  display: flex;
+.intro__scroll {
   align-items: center;
   width: 247px;
   height: 97px;
@@ -83,13 +98,161 @@
 
   background-color: $primary-color;
 
+  @include flexbox;
+
   p {
     padding-right: 20px;
     padding-left: 53px;
 
     font-size: 14px;
     font-family: $font-family-5;
-    color: $white-text-color;
+    color: $text-color--light;
     text-transform: uppercase;
+
+    @include font;
+  }
+}
+
+.intro__scroll--anime {
+  display: block;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  animation-name: animateArrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animateArrow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+//-------------------Media 992px------------------//
+
+.intro__social {
+  @include lg {
+    display: none;
+  }
+}
+
+.section--intro {
+  @include lg {
+    background-position: 0 0;
+  }
+}
+
+.intro__title {
+  @include lg {
+    font-size: 35px;
+  }
+}
+
+.intro__text {
+  @include lg {
+    font-size: 20px;
+  }
+}
+
+.intro__scroll {
+  @include lg {
+    margin-left: -590px;
+  }
+
+  p {
+    @include lg {
+      padding-left: 90px;
+
+      font-size: 13px;
+    }
+  }
+}
+
+//-------------------Media 768px------------------//
+
+.section--intro {
+  @include md {
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.intro__title {
+  @include md {
+    padding-bottom: 10px;
+
+    font-size: 28px;
+    line-height: 44px;
+  }
+}
+
+.intro__text {
+  @include md {
+    font-size: 16px;
+  }
+}
+
+.intro__scroll {
+  @include md {
+    display: none;
+  }
+}
+
+// .intro__content {
+//   @include md {
+//     margin-top: 125px;
+//   }
+// }
+
+//-------------------Media 576px------------------//
+
+.intro__title {
+  @include sm {
+    padding-bottom: 10px;
+
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
+.intro__text {
+  @include sm {
+    padding-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+//-------------------Media 375px------------------//
+
+.intro__content {
+  @include sm-1 {
+    margin-top: 85px;
+    margin-left: 18px;
+  }
+}
+
+.intro__title {
+  @include sm-1 {
+    font-size: 23px;
+    line-height: 31px;
+  }
+}
+
+.intro__text {
+  @include sm-1 {
+    font-size: 18px;
   }
 }

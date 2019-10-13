@@ -94,6 +94,12 @@
 
 //-------------------Media 992px------------------//
 
+.header__inner {
+  @include lg {
+    padding: 30px 27px 22px 18px;
+  }
+}
+
 .nav {
   @include lg {
     display: none;

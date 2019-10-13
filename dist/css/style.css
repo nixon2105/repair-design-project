@@ -225,7 +225,9 @@ th {
   text-transform: uppercase;
   background: #e3b873;
   border: 0;
-  border-radius: 4px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
   cursor: pointer;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -240,16 +242,35 @@ th {
           box-shadow: inset 0 0 0 3px #ffffff;
 }
 
-.button--intro {
+.button__intro--calc {
   width: 207px;
   height: 51px;
-  background: transparent;
-  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: #e3b873;
 }
 
-.button--intro:hover {
+.button__intro--calc:hover {
+  background: transparent;
+  border-color: #e3b873;
+}
+
+.button__intro--app {
+  width: 207px;
+  height: 51px;
+  font-size: 13px;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.button__intro--app:hover {
   background: #e3b873;
-  border: 0;
+  border: none;
 }
 
 .button__submit {
@@ -268,6 +289,38 @@ th {
 .button__submit--build {
   width: 213px;
   margin-left: 255px;
+}
+
+@media (max-width: 576px) {
+  .button__intro--calc,
+  .button__intro--app {
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  .button__intro--calc,
+  .button__intro--app {
+    width: 338px;
+  }
+}
+
+@media (max-width: 375px) {
+  .button__intro--calc {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 375px) {
+  .button__intro--app span {
+    display: none;
+  }
 }
 
 .nav-toggle {
@@ -441,6 +494,12 @@ th {
 }
 
 @media (max-width: 992px) {
+  .header__inner {
+    padding: 30px 27px 22px 18px;
+  }
+}
+
+@media (max-width: 992px) {
   .nav {
     display: none;
   }
@@ -533,26 +592,31 @@ th {
   }
 }
 
-.intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.section--intro {
   width: 100%;
   background: url("../../dist/assets/images/Intro/intro__baner.png");
   background-repeat: no-repeat;
   background-position: 82px 0;
 }
 
-.intro__content {
+.intro {
   display: -webkit-box;
+  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.intro__content {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 190px;
   margin-left: 60px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .intro__social {
@@ -567,6 +631,8 @@ th {
   font-family: "FuturaDemiC", Arial, sans-serif;
   color: #e3b873;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .intro__social:after {
@@ -588,6 +654,8 @@ th {
   font-family: "Yeseva One", Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .intro__title span {
@@ -600,23 +668,25 @@ th {
   line-height: 30px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .intro__buttons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 150px;
   display: -webkit-box;
+  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 150px;
 }
 
-.intro__buttons-calc {
+.intro__buttons--calc {
   padding-right: 20px;
 }
 
-.intro__scrooll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.intro__scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -626,15 +696,163 @@ th {
   margin-left: -656px;
   text-align: center;
   background-color: #252525;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.intro__scrooll p {
+.intro__scroll p {
   padding-right: 20px;
   padding-left: 53px;
   font-size: 14px;
   font-family: "Yeseva One", Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.intro__scroll--anime {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-animation-name: animateArrow;
+          animation-name: animateArrow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animateArrow {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes animateArrow {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media (max-width: 992px) {
+  .intro__social {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .section--intro {
+    background-position: 0 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro__scroll {
+    margin-left: -590px;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro__scroll p {
+    padding-left: 90px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section--intro {
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__title {
+    padding-bottom: 10px;
+    font-size: 28px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro__title {
+    padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro__text {
+    padding-bottom: 32px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro__content {
+    margin-top: 85px;
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro__title {
+    font-size: 23px;
+    line-height: 31px;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro__text {
+    font-size: 18px;
+  }
 }
 
 .section--project {
