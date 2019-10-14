@@ -30,6 +30,7 @@
   justify-content: space-between;
   margin: 73px 27px 102px 156px;
 
+  @include flexbox;
   @include font;
 }
 

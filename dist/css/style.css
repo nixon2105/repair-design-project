@@ -2457,6 +2457,10 @@ th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 73px 27px 102px 156px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   font-style: normal;
   font-weight: normal;
 }
