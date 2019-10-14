@@ -8,15 +8,17 @@
 .section__title--repair {
   margin-bottom: 30px;
 
-  color: #181818;
+  color: $text-color--darkest;
 }
 
 .repair {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 31px 100px 31px 102px;
+
+  @include flexbox;
 }
+
 .repair__item {
   position: relative;
 
@@ -37,27 +39,34 @@
 
   width: 330px;
 
-  background-color: $white-text-color;
+  background-color: $text-color--light;
+
   h4 {
     padding: 25px 68px 13px 34px;
 
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-5;
-    color: $primary-text-color;
+    color: $text-color--darken;
+
+    @include font;
   }
 
   ul {
     padding: 0 29px 49px 48px;
   }
+
   li {
     list-style-type: disc;
     font-size: 15px;
     line-height: 26px;
     font-family: $font-family-2;
-    color: #959595;
+    color: $text-color--dark;
+
+    @include font;
   }
 }
+
 .repair__coast {
   position: absolute;
   top: 133%;
@@ -67,7 +76,8 @@
   width: 228px;
   height: 54px;
 
-  background-color: $secondary-text-color;
+  background-color: $text-color--main;
+
   p {
     padding-top: 17px;
 
@@ -75,7 +85,9 @@
     line-height: 25px;
     font-family: $font-family-5;
     text-align: center;
-    color: $white-text-color;
+    color: $text-color--light;
     text-transform: uppercase;
+
+    @include font;
   }
 }
