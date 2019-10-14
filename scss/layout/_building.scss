@@ -4,34 +4,38 @@
 }
 
 .build__content {
-  display: flex;
   flex-direction: column;
+
+  @include flexbox;
 }
 
 .build__item {
   z-index: 10;
 
-  display: flex;
   overflow: hidden;
+
+  @include flexbox;
 }
 
 .build__text {
-  display: flex;
   align-items: center;
 
   font-size: 18px;
   line-height: 21px;
   font-family: $font-family-3;
-  color: $primary-text-color;
+  color: $text-color--darken;
+
+  @include font;
+  @include flexbox;
 }
 
 .build {
   position: relative;
 
-  display: flex;
-
   background: url("../../dist/assets/images/Building/build.png") no-repeat;
   background-position: -72% -12%;
+
+  @include flexbox;
 }
 
 .build__content:after {
@@ -44,8 +48,8 @@
   width: 636px;
   height: 636px;
 
-  border-right: 2px solid $secondary-text-color;
-  border-bottom: 2px solid $secondary-text-color;
+  border-right: 2px solid $text-color--main;
+  border-bottom: 2px solid $text-color--main;
   -moz-border-radius: 50%;
        border-radius: 50%;
   -webkit-transform: rotate(-45deg);
@@ -64,10 +68,12 @@
   line-height: 40px;
   font-family: $font-family-5;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
 
-  background-color: $secondary-text-color;
+  background-color: $text-color--main;
   border-radius: 50%;
+
+  @include font;
 }
 
 .build__text--one {
@@ -98,7 +104,6 @@
   margin-left: 40px;
 
   background: $primary-color;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
 }
 
 .build__form-title {
@@ -108,20 +113,24 @@
   line-height: 25px;
   font-family: $font-family-1;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 }
 
 .build__form {
-  display: flex;
   flex-direction: column;
+
+  @include flexbox;
 }
 
 .form-col {
-  display: flex;
   flex-direction: column;
   width: 408px;
   margin-top: 39px;
   margin-left: 60px;
+
+  @include flexbox;
 
   input {
     background-color: $primary-color;
@@ -138,28 +147,35 @@
     line-height: 21px;
     font-family: $font-family-2;
     color: $text-color--dark-transparent;
+
+    @include font;
   }
 
   ::-webkit-input-placeholder {
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-2;
-    color: $white-text-color;
+    color: $text-color--light;
+
+    @include font;
   }
 
   ::-moz-placeholder {
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-2;
-    color: $white-text-color;
+    color: $text-color--light;
+
+    @include font;
   }
 
-  /* Firefox 19+ */
   :-moz-placeholder {
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-2;
-    color: $white-text-color;
+    color: $text-color--light;
+
+    @include font;
   }
 }
 
@@ -171,7 +187,9 @@
   font-size: 16px;
   line-height: 22px;
   font-family: $font-family-2;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 
   input[type="checkbox"] {
     display: none;
@@ -189,21 +207,22 @@
     text-align: center;
     color: transparent;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
     border: none;
 
     transition: color ease 0.3s;
   }
 
   input[type="checkbox"]:checked + label:before {
-    color: #ffffff;
+    color: $text-color--light;
   }
 }
 
 .build__cost {
-  display: flex;
   margin-top: 24px;
   margin-left: 60px;
+
+  @include flexbox;
 
   p {
     margin-top: 21px;
@@ -211,8 +230,8 @@
     font-size: 20px;
     line-height: 25px;
     font-family: $font-family-1;
-    color: $secondary-text-color;
-    color: #e3b873;
-    text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);
+    color: $text-color--main;
+
+    @include font;
   }
 }

@@ -1809,27 +1809,26 @@ th {
 }
 
 .build__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .build__item {
   z-index: 10;
+  overflow: hidden;
   display: -webkit-box;
+  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
 }
 
 .build__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1837,15 +1836,22 @@ th {
   line-height: 21px;
   font-family: "FuturaMediumC", Arial, sans-serif;
   color: #363636;
+  font-style: normal;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .build {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background: url("../../dist/assets/images/Building/build.png") no-repeat;
   background-position: -72% -12%;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .build__content:after {
@@ -1874,6 +1880,8 @@ th {
   color: #ffffff;
   background-color: #e3b873;
   border-radius: 50%;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .build__text--one {
@@ -1903,8 +1911,6 @@ th {
   margin-top: 110px;
   margin-left: 40px;
   background: #252525;
-  -webkit-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
 }
 
 .build__form-title {
@@ -1914,22 +1920,22 @@ th {
   font-family: "FuturaDemiC", Arial, sans-serif;
   text-align: center;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .build__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1937,7 +1943,10 @@ th {
   width: 408px;
   margin-top: 39px;
   margin-left: 60px;
-  /* Firefox 19+ */
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form-col input {
@@ -1954,6 +1963,8 @@ th {
   line-height: 21px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: rgba(255, 255, 255, 0.3);
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form-col ::-webkit-input-placeholder {
@@ -1961,6 +1972,8 @@ th {
   line-height: 25px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form-col ::-moz-placeholder {
@@ -1968,6 +1981,8 @@ th {
   line-height: 25px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form-col :-moz-placeholder {
@@ -1975,6 +1990,8 @@ th {
   line-height: 25px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .build__form--checkbox {
@@ -1985,6 +2002,8 @@ th {
   line-height: 22px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .build__form--checkbox input[type="checkbox"] {
@@ -2011,11 +2030,12 @@ th {
 }
 
 .build__cost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 24px;
   margin-left: 60px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .build__cost p {
@@ -2024,8 +2044,8 @@ th {
   line-height: 25px;
   font-family: "FuturaDemiC", Arial, sans-serif;
   color: #e3b873;
-  color: #e3b873;
-  text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);
+  font-style: normal;
+  font-weight: normal;
 }
 
 .section--gallery {
