@@ -3,17 +3,15 @@
   margin: 0 auto;
   margin-top: 117px;
 
-  background: linear-gradient(
-  to top,
+  background: linear-gradient(to top,
   $primary-color 72%,
-  $white-text-color 28%
-  );
+  $text-color--light 28%);
 }
 
 .section__title--desing {
   margin-bottom: 30px;
 
-  color: #181818;
+  color: $text-color--darkest;
 }
 
 .section__text {
@@ -23,15 +21,19 @@
   line-height: 27px;
   font-family: $font-family-2;
   text-align: center;
-  color: $primary-text-color;
+  color: $text-color--darken;
+
+  @include font;
 }
 
 .desing {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 40px 100px 31px 102px;
+
+  @include flexbox;
 }
+
 .desing__item {
   position: relative;
 
@@ -52,27 +54,34 @@
 
   width: 330px;
 
-  background-color: $white-text-color;
+  background-color: $text-color--light;
+
   h4 {
     padding: 25px 68px 13px 34px;
 
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-5;
-    color: $primary-text-color;
+    color: $text-color--darken;
+
+    @include font;
   }
 
   ul {
     padding: 0 29px 49px 48px;
   }
+
   li {
     list-style-type: disc;
     font-size: 15px;
     line-height: 26px;
     font-family: $font-family-2;
-    color: #959595;
+    color: $text-color--dark;
+
+    @include font;
   }
 }
+
 .desing__coast {
   position: absolute;
   top: 114%;
@@ -82,7 +91,7 @@
   width: 228px;
   height: 54px;
 
-  background-color: $secondary-text-color;
+  background-color: $text-color--main;
 
   p {
     padding-top: 17px;
@@ -91,8 +100,10 @@
     line-height: 25px;
     font-family: $font-family-5;
     text-align: center;
-    color: $white-text-color;
+    color: $text-color--light;
     text-transform: uppercase;
+
+    @include font;
   }
 }
 
@@ -105,11 +116,12 @@
 }
 
 .measurements {
-  display: flex;
   flex-direction: column;
   width: 30%;
   margin-top: 330px;
   margin-left: 99px;
+
+  @include flexbox;
 }
 
 .measurements__suptitile {
@@ -118,8 +130,10 @@
   font-size: 15px;
   line-height: 21px;
   font-family: $font-family-1;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
+
+  @include font;
 }
 
 .measurements__title {
@@ -130,8 +144,10 @@
   font-size: 27px;
   line-height: 37px;
   font-family: $font-family-5;
-  color: $secondary-text-color;
+  color: $text-color--main;
   text-transform: uppercase;
+
+  @include font;
 
   &:after {
     content: "";
@@ -144,7 +160,7 @@
     width: 92px;
     height: 1px;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
   }
 }
 
@@ -154,7 +170,9 @@
   font-size: 15px;
   line-height: 26px;
   font-family: $font-family-2;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 
   span {
     margin-bottom: 22px;
@@ -163,8 +181,10 @@
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-5;
-    color: $white-text-color;
+    color: $text-color--light;
     text-transform: uppercase;
+
+    @include font;
   }
 
   h3 {
@@ -174,8 +194,10 @@
     font-size: 15px;
     line-height: 23px;
     font-family: $font-family-5;
-    color: $secondary-text-color;
+    color: $text-color--main;
     text-transform: uppercase;
+
+    @include font;
   }
 }
 
@@ -191,17 +213,18 @@
 
     color: transparent;
 
-    background-color: $black-light-color;
+    background-color: $text-color--dark-transparent;
     border-radius: 50%;
   }
 }
 
 .works {
-  display: flex;
   flex-direction: column;
   width: 60%;
   margin-top: 360px;
   margin-left: 55px;
+
+  @include flexbox;
 }
 
 .works__step--double {
@@ -209,23 +232,27 @@
 }
 
 .goal {
-  display: flex;
   justify-content: space-between;
+
+  @include flexbox;
 }
 
 .steps__list {
-  display: flex;
   flex-flow: row wrap;
   width: 765px;
+
+  @include flexbox;
 }
 
 .step__item {
   font-size: 15px;
   line-height: 18px;
   font-family: $font-family-2;
-  color: $white-text-color;
+  color: $text-color--light;
 
   opacity: 0.6;
+
+  @include font;
 
   &:nth-child(1),
   &:nth-child(4) {
@@ -248,14 +275,14 @@
   }
 
   &:hover {
-    color: $white-text-color;
+    color: $text-color--light;
 
     cursor: pointer;
   }
 }
 
 .step__num {
-  border-bottom: 1px solid $secondary-text-color;
+  border-bottom: 1px solid $text-color--main;
 }
 
 .works__photo {

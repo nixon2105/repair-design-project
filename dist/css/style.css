@@ -2154,18 +2154,21 @@ th {
   font-family: "FuturaBookC", Arial, sans-serif;
   text-align: center;
   color: #363636;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .desing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 40px 100px 31px 102px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .desing__item {
@@ -2194,6 +2197,8 @@ th {
   line-height: 25px;
   font-family: "Yeseva One", Arial, sans-serif;
   color: #363636;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .desing__content ul {
@@ -2206,6 +2211,8 @@ th {
   line-height: 26px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #959595;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .desing__coast {
@@ -2226,6 +2233,8 @@ th {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .desing__coast--standart {
@@ -2237,9 +2246,6 @@ th {
 }
 
 .measurements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2247,6 +2253,10 @@ th {
   width: 30%;
   margin-top: 330px;
   margin-left: 99px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .measurements__suptitile {
@@ -2256,6 +2266,8 @@ th {
   font-family: "FuturaDemiC", Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .measurements__title {
@@ -2266,6 +2278,8 @@ th {
   font-family: "Yeseva One", Arial, sans-serif;
   color: #e3b873;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .measurements__title:after {
@@ -2286,6 +2300,8 @@ th {
   line-height: 26px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .measurements__text span {
@@ -2296,6 +2312,8 @@ th {
   font-family: "Yeseva One", Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .measurements__text h3 {
@@ -2306,6 +2324,8 @@ th {
   font-family: "Yeseva One", Arial, sans-serif;
   color: #e3b873;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .pagination__item--add:nth-child(2), .pagination__item--add:nth-child(3), .pagination__item--add:nth-child(4), .pagination__item--add:nth-child(5), .pagination__item--add:nth-child(6), .pagination__item--add:nth-child(7) {
@@ -2317,9 +2337,6 @@ th {
 }
 
 .works {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2327,6 +2344,10 @@ th {
   width: 60%;
   margin-top: 360px;
   margin-left: 55px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .works__step--double {
@@ -2334,23 +2355,25 @@ th {
 }
 
 .goal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .steps__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   width: 765px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .step__item {
@@ -2359,6 +2382,8 @@ th {
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
   opacity: 0.6;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .step__item:nth-child(1), .step__item:nth-child(4) {
