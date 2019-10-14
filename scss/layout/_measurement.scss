@@ -3,22 +3,25 @@
   margin: 0 auto;
   margin-top: 237px;
 
-  background: url("../../dist/assets/images/Desing styles/bg.png") no-repeat
-  center;
+  background: url("../../dist/assets/images/Desing styles/bg.png") no-repeat center;
   background-size: 100% 865px;
 }
 
 .gallery {
-  display: flex;
   justify-content: space-between;
+
+  @include flexbox;
 }
 
 .gallery__item {
-  display: flex;
   flex-direction: column;
+
+  @include flexbox;
+
   &:last-child {
     margin-right: 100px;
   }
+
   &:first-child {
     margin-right: 176px;
   }
@@ -32,28 +35,35 @@
   font-size: 27px;
   line-height: 37px;
   font-family: $font-family-5;
-  color: $secondary-text-color;
+  color: $text-color--main;
   text-transform: uppercase;
+
+  @include font;
 }
 
 .gallery__list {
   margin-left: 99px;
+
   li {
     padding-bottom: 25px;
 
     font-size: 20px;
     line-height: 33px;
     font-family: $font-family-4;
-    color: $white-text-color;
+    color: $text-color--light;
+
+    @include font;
+
     &:hover {
-      color: $secondary-text-color;
+      color: $text-color--main;
     }
   }
 }
 
 .gallery__american {
-  display: flex;
   flex-direction: column;
+
+  @include flexbox;
 }
 
 .gallery__image {
