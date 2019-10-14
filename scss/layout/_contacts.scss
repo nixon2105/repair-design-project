@@ -10,9 +10,10 @@
 }
 
 .contacts {
-  display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include flexbox;
 }
 
 .contacts__form {
@@ -29,26 +30,31 @@
   line-height: 28px;
   font-family: $font-family-5;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
+
+  @include font;
 }
 
 .form__questions {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 520px;
   margin: 0 auto;
+
+  @include flexbox;
 }
+
 .form__data {
-  display: flex;
   flex-direction: column;
   width: 230px;
   padding-bottom: 45px;
 
+  @include flexbox;
+
   input {
     background-color: $primary-color;
-    border: 1px solid rgba(54, 54, 54, 0.5);
+    border: 1px solid $text-color--dark-label;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -60,21 +66,27 @@
     font-size: 15px;
     line-height: 21px;
     font-family: $font-family-2;
-    color: rgba(255, 255, 255, 0.5);
+    color: $text-color--dark-transparent;
+
+    @include font;
   }
 
   ::-webkit-input-placeholder {
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-2;
-    color: $white-text-color;
+    color: $text-color--light;
+
+    @include font;
   }
 
   ::-moz-placeholder {
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-2;
-    color: $white-text-color;
+    color: $text-color--light;
+
+    @include font;
   }
 
   /* Firefox 19+ */
@@ -82,7 +94,9 @@
     font-size: 18px;
     line-height: 25px;
     font-family: $font-family-2;
-    color: $white-text-color;
+    color: $text-color--light;
+
+    @include font;
   }
 }
 
@@ -101,7 +115,9 @@
   line-height: 22px;
   font-family: $font-family-2;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 
   input[type="checkbox"] {
     display: none;
@@ -119,14 +135,14 @@
     text-align: center;
     color: transparent;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
     border: none;
 
     transition: color ease 0.3s;
   }
 
   input[type="checkbox"]:checked + label:before {
-    color: #ffffff;
+    color: $text-color--light;
   }
 }
 
@@ -135,8 +151,9 @@
 }
 
 .contacts__info {
-  display: flex;
   flex-direction: column;
+
+  @include flexbox;
 }
 
 .contacts__address {
@@ -146,14 +163,17 @@
   line-height: 28px;
   font-family: $font-family-5;
   text-align: center;
-  color: $secondary-text-color;
+  color: $text-color--main;
   text-transform: uppercase;
+
+  @include font;
 }
 
 .contacts__social {
-  display: flex;
   justify-content: center;
   margin: 26px auto 43px;
+
+  @include flexbox;
 }
 
 .social__link {
@@ -164,7 +184,7 @@
 
   text-align: center;
 
-  background-color: $secondary-text-color;
+  background-color: $text-color--main;
   border-radius: 50%;
   cursor: pointer;
 }

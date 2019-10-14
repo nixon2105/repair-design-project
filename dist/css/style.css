@@ -2701,9 +2701,6 @@ th {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2711,6 +2708,10 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contacts__form {
@@ -2727,12 +2728,11 @@ th {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form__questions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -2740,18 +2740,23 @@ th {
           justify-content: space-between;
   width: 520px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__data {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 230px;
   padding-bottom: 45px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   /* Firefox 19+ */
 }
 
@@ -2768,7 +2773,9 @@ th {
   font-size: 15px;
   line-height: 21px;
   font-family: "FuturaBookC", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form__data ::-webkit-input-placeholder {
@@ -2776,6 +2783,8 @@ th {
   line-height: 25px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form__data ::-moz-placeholder {
@@ -2783,6 +2792,8 @@ th {
   line-height: 25px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form__data :-moz-placeholder {
@@ -2790,6 +2801,8 @@ th {
   line-height: 25px;
   font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form__data--quest {
@@ -2807,6 +2820,8 @@ th {
   font-family: "FuturaBookC", Arial, sans-serif;
   text-align: center;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form__data--checkbox input[type="checkbox"] {
@@ -2837,13 +2852,14 @@ th {
 }
 
 .contacts__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contacts__address {
@@ -2854,16 +2870,19 @@ th {
   text-align: center;
   color: #e3b873;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .contacts__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 26px auto 43px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .social__link {
