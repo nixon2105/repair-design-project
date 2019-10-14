@@ -1,19 +1,34 @@
 .section--control {
   width: 100%;
   margin: 0 auto;
-  //   background: $primary-color;
 
   background: linear-gradient(
   to top,
-  $white-text-color 70%,
+  $text-color--light 70%,
   $primary-color 30%
   );
+
+  @include sm {
+    background: linear-gradient(
+    to top,
+    $text-color--light 76%,
+    $primary-color 30%
+    );
+  }
+  @include sm-1 {
+    background: linear-gradient(
+    to top,
+    $text-color--light 8.06%,
+    $primary-color 8.06%
+    );
+  }
 }
 
 .control {
-  display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include flexbox;
 }
 
 .section__title {
@@ -21,8 +36,13 @@
   line-height: 28px;
   font-family: $font-family-5;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
+
+  @include font;
+  @include sm-1 {
+    font-size: 22px;
+  }
 }
 
 .section__logo {
@@ -37,6 +57,27 @@
 
   margin-bottom: 76px;
 
+  @include md {
+    margin-bottom: 60px;
+  }
+  @include sm {
+    margin-bottom: 50px;
+  }
+  iframe {
+    @include md {
+      width: 550px;
+      height: 330px;
+    }
+    @include sm {
+      width: 450px;
+      height: 230px;
+    }
+    @include sm-1 {
+      width: 340px;
+      height: 207px;
+    }
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -48,7 +89,7 @@
     width: 55px;
     height: 1px;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
   }
 }
 
@@ -61,25 +102,67 @@
   font-family: $font-family-2;
   text-align: center;
   color: $primary-text-color;
+
+  @include font;
+  @include md {
+    font-size: 18px;
+  }
+  @include sm {
+    width: 540px;
+
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  @include sm-1 {
+    width: 340px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @include sm-1 {
+    color: $text-color--light;
+  }
 }
 
 .control__form {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 769px;
   margin: 0 auto;
+
+  @include flexbox;
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-top: -40px;
+  }
+  @include sm-1 {
+    width: 340px;
+  }
 }
 
 .form-row {
-  display: flex;
   flex-direction: column;
 
+  @include sm {
+    margin-bottom: 60px;
+  }
+  @include sm {
+    width: 340px;
+  }
+  @include flexbox;
+
   input {
-    border: 1px solid rgba(54, 54, 54, 0.5);
+    border: 1px solid $text-color--dark-label;
     border-top: none;
     border-right: none;
     border-left: none;
+
+    @include sm-1 {
+      background-color: $primary-color;
+    }
   }
 
   label {
@@ -88,7 +171,12 @@
     font-size: 15px;
     line-height: 20px;
     font-family: $font-family-2;
-    color: rgba(54, 54, 54, 0.5);
+    color: $text-color--dark-label;
+
+    @include font;
+    @include sm-1 {
+      color: $text-color--dark-transparent;
+    }
   }
 
   ::-webkit-input-placeholder {
@@ -96,6 +184,11 @@
     line-height: 24px;
     font-family: $font-family-2;
     color: $primary-text-color;
+
+    @include font;
+    @include sm-1 {
+      color: $text-color--light;
+    }
   }
 
   ::-moz-placeholder {
@@ -103,14 +196,23 @@
     line-height: 24px;
     font-family: $font-family-2;
     color: $primary-text-color;
+
+    @include font;
+    @include sm-1 {
+      color: $text-color--light;
+    }
   }
 
-  /* Firefox 19+ */
   :-moz-placeholder {
     font-size: 18px;
     line-height: 24px;
     font-family: $font-family-2;
     color: $primary-text-color;
+
+    @include sm-1 {
+      color: $text-color--light;
+    }
+    @include font;
   }
 }
 
@@ -122,35 +224,18 @@
   font-size: 16px;
   line-height: 22px;
   font-family: $font-family-2;
-  color: #181818;
+  color: $text-color--darkest;
 
-  // input[type=checkbox],
-  // input[type=radio] {
-  //   display: none;
-  // }
-
-  // input[type=checkbox] + label:before {
-  //   content: "\2713";
-
-  //   display: inline-block;
-  //   width: 20px;
-  //   height: 20px;
-  //   margin: -5px 5px 0 0;
-
-  //   font-size: 20px;
-  //   line-height: 22px;
-  //   vertical-align: middle;
-  //   text-align: center;
-  //   color: transparent;
-
-  //   border: 1px solid #000000;
-
-  //   transition: color ease 0.3s;
-  // }
-
-  // input[type=checkbox]:checked + label:before {
-  //   color: #000000;
-  // }
+  @include sm-1 {
+    color: $text-color--light;
+  }
+  @include sm {
+    order: 3;
+    margin-top: -38px;
+    margin-left: 0;
+  }
+  @include flexbox;
+  @include font;
 
   input[type="checkbox"] {
     display: none;
@@ -168,13 +253,13 @@
     text-align: center;
     color: transparent;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
     border: none;
 
     transition: color ease 0.3s;
   }
 
   input[type="checkbox"]:checked + label:before {
-    color: #ffffff;
+    color: $text-color--light;
   }
 }

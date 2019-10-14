@@ -102,6 +102,17 @@
 
   background: $secondary-text-color;
   border: none;
+
+  @include sm {
+    order: 4;
+    width: 490px;
+    margin-top: -108px;
+    margin-bottom: 57px;
+  }
+  @include sm {
+    width: 340px;
+    margin-left: 0;
+  }
 }
 
 .button__submit--build {

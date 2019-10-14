@@ -39,7 +39,7 @@
                 <a class="nav__link" href="">contacts</a>
               </li>
               <li class="nav__item nav__item--mobile">
-                <a class="nav__link nav__link--active" href="tel:7(928)768-32-39">+7(928)768-32-39</a>
+                <a class="nav__link nav__link--active" href="tel:79287683239">+7(928)768-32-39</a>
               </li>
               <li class="nav__item">
                 <button class="button button__header" type="button">request a call</button>
@@ -228,7 +228,7 @@
     <!--container-->
   </main>
 
-
+<!-- Online control -->
   <section class="section section--control">
     <div class="inner">
       <div class="section__header">
@@ -239,6 +239,7 @@
           <img src="assets/images/Online control/Group.svg" alt="logo" />
         </div>
       </div>
+
       <div class="control">
         <div class="conrol__video">
           <iframe width="817" height="434" src="https://www.youtube.com/embed/u_d0Nnh-H0c" frameborder="0"
@@ -253,23 +254,24 @@
             Leave a request below and you will receive a link to the broadcast.
           </p>
         </div>
-      </div>
+      </div><!--/.control-->
+
       <form class="control__form" action="#" method="POST">
         <div class="form-row">
           <label for="text">Name</label>
-          <input type="text" required placeholder="What is your name:" />
+          <input type="text" name="user-name" placeholder="What is your name:" required/>
         </div>
         <div class="form-row">
           <label for="tel">Phone</label>
-          <input type="tel" required placeholder="Your phone number:" />
+          <input type="tel" name="phone-number" placeholder="Your phone number:"required  />
         </div>
         <button class="button__submit" type="submit">submit</button><br />
         <div class="control__form--checkbox ">
-          <input class="checkbox" id="number" type="checkbox" name="number" />
+          <input class="checkbox" id="number" type="checkbox" name="number"required />
           <label for="number">I agree to the processing of personal data</label>
         </div>
       </form>
-    </div>
+    </div> <!--/.inner-->
   </section>
 
   <section class="section section--repair">
