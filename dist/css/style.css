@@ -2446,18 +2446,19 @@ th {
   font-family: "FuturaBookC", Arial, sans-serif;
   text-align: center;
   color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 73px 27px 102px 156px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .team__item {
@@ -2499,6 +2500,8 @@ th {
   font-family: "Yeseva One", Arial, sans-serif;
   text-align: center;
   color: #181818;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .team__prof {
@@ -2508,6 +2511,8 @@ th {
   font-family: "FuturaBookC", Arial, sans-serif;
   text-align: center;
   color: #959595;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .team__experience {
@@ -2519,6 +2524,8 @@ th {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #e3b873;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .team__text {
@@ -2530,6 +2537,8 @@ th {
   font-family: "FuturaBookC", Arial, sans-serif;
   text-align: center;
   color: #363636;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .team__text:before {

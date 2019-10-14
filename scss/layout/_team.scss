@@ -2,17 +2,15 @@
   width: 100%;
   margin: 0 auto;
 
-  background: linear-gradient(
-  to top,
-  $white-text-color 52%,
-  $primary-color 48%
-  );
+  background: linear-gradient(to top,
+  $text-color--light 52%,
+  $primary-color 48%);
 }
 
 .section__title--team {
   margin-bottom: 30px;
 
-  color: $white-text-color;
+  color: $text-color--light;
 }
 
 .section__text--team {
@@ -22,14 +20,17 @@
   line-height: 27px;
   font-family: $font-family-2;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
+
+  @include font;
 }
 
 .team {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 73px 27px 102px 156px;
+
+  @include font;
 }
 
 .team__item {
@@ -46,7 +47,8 @@
   width: 70px;
   height: 70px;
 
-  background-color: $secondary-text-color;
+  background-color: $text-color--main;
+
   img {
     padding: 13px;
   }
@@ -59,7 +61,7 @@
 
   width: 233px;
 
-  background-color: $white-text-color;
+  background-color: $text-color--light;
 }
 
 .team__photo {
@@ -75,7 +77,9 @@
   line-height: 25px;
   font-family: $font-family-5;
   text-align: center;
-  color: #181818;
+  color: $text-color--darkest;
+
+  @include font;
 }
 
 .team__prof {
@@ -85,7 +89,9 @@
   line-height: 26px;
   font-family: $font-family-2;
   text-align: center;
-  color: #959595;
+  color: $text-color--dark;
+
+  @include font;
 }
 
 .team__experience {
@@ -95,10 +101,12 @@
   line-height: 20px;
   font-family: $font-family-5;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
 
-  background-color: $secondary-text-color;
+  background-color: $text-color--main;
+
+  @include font;
 }
 
 .team__text {
@@ -113,6 +121,8 @@
   text-align: center;
   color: $primary-text-color;
 
+  @include font;
+
   &:before {
     content: "";
     position: absolute;
@@ -124,6 +134,6 @@
     width: 55px;
     height: 2px;
 
-    background: $secondary-text-color;
+    background: $text-color--main;
   }
 }
