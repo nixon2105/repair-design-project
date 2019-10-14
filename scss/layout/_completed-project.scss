@@ -11,6 +11,17 @@
   margin-left: 108px;
 
   @include flexbox;
+  @include lg {
+    margin-left: 50px;
+  }
+  @include md {
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+  @include lg {
+    margin-left: 20px;
+  }
 }
 
 .project__title {
@@ -25,6 +36,18 @@
   text-transform: uppercase;
 
   @include font;
+  @include lg {
+    font-size: 24px;
+  }
+  @include md {
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+  @include sm {
+    font-size: 22px;
+    line-height: 30px;
+  }
 
   &:after {
     content: "";
@@ -38,6 +61,10 @@
     height: 1px;
 
     background: $text-color--main;
+
+    @include md {
+      display: none;
+    }
   }
 }
 
@@ -50,6 +77,21 @@
   color: $text-color--light;
 
   @include font;
+  @include lg {
+    font-size: 16px;
+  }
+  @include md {
+    margin-bottom: 0;
+
+    text-align: center;
+  }
+  @include sm-1 {
+    margin-bottom: 26px;
+
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
 
 .project__descr {
@@ -57,6 +99,12 @@
   justify-content: space-between;
 
   @include flexbox;
+  @include md {
+    margin-top: -40px;
+  }
+  @include sm-1 {
+    margin-top: -4px;
+  }
 }
 
 .descr__item {
@@ -73,6 +121,9 @@
   text-transform: uppercase;
 
   @include font;
+  @include sm {
+    font-size: 16px;
+  }
 }
 
 .descr__item--content {
@@ -84,6 +135,9 @@
   color: $text-color--light;
 
   @include font;
+  @include sm-1 {
+    font-size: -15px;
+  }
 }
 
 .slider {
@@ -92,6 +146,9 @@
   overflow: hidden;
 
   @include flexbox;
+  @include md {
+    display: none;
+  }
 }
 
 .slider__main {
@@ -99,6 +156,15 @@
   margin-top: 59px;
 
   @include flexbox;
+}
+
+.nav__project {
+  @include lg {
+    display: block;
+  }
+  @include md {
+    display: none;
+  }
 }
 
 .nav__item--slider {
@@ -112,6 +178,11 @@
   cursor: pointer;
 
   @include font;
+  @include lg {
+    margin: 0 21px;
+
+    font-size: 13px;
+  }
 
   &:first-child {
     margin-left: 0;
@@ -160,16 +231,63 @@
 
   margin-top: 53px;
   margin-left: -31px;
+
+  @include lg {
+    margin-top: -55px;
+  }
+}
+
+.slider__image--mob {
+  @include lg {
+    width: 600px;
+  }
 }
 
 .slider__next {
   position: relative;
 
   margin-top: 131px;
+
+  @include xl {
+    display: none;
+  }
+}
+
+.slider__next--mobile {
+  display: none;
+
+  @include md {
+    position: relative;
+
+    display: block;
+  }
+  @include md {
+    margin-left: -15px;
+  }
+}
+
+.img__mob {
+  @include md {
+    width: 660px;
+    height: auto;
+  }
+  @include sm {
+    width: 500px;
+  }
+  @include sm-1 {
+    width: 340px;
+  }
 }
 
 .pagination {
   margin-top: 40px;
+
+  @include lg {
+    margin-bottom: 25px;
+  }
+  @include md {
+    display: none;
+  }
 }
 
 .pagination__list {
@@ -213,58 +331,3 @@
   background-color: #ffffff;
   border-radius: 50%;
 }
-
-//-------------------Media 1200px------------------//
-
-.slider__next {
-  @include xl {
-    display: none;
-  }
-}
-
-//-------------------Media 992px------------------//
-.project {
-  @include lg {
-    margin-left: 50px;
-  }
-}
-
-.nav__project {
-  @include lg {
-    display: block;
-  }
-}
-
-.nav__item--slider {
-  @include lg {
-    margin: 0 24px;
-
-    font-size: 13px;
-  }
-}
-
-.project__title {
-  @include lg {
-    font-size: 24px;
-  }
-}
-
-.slider__image {
-  @include lg {
-    margin-top: -55px;
-  }
-
-  .slider__image--mob {
-    @include lg {
-      width: 600px;
-    }
-  }
-}
-
-.project__text {
-  @include lg {
-    font-size: 16px;
-  }
-}
-
-//-------------------Media 992px------------------//

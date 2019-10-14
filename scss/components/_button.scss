@@ -60,7 +60,6 @@
   }
 }
 
-
 .slick-arrow {
   position: absolute;
   top: 37%;
@@ -80,8 +79,8 @@
 
   &:hover {
     -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -110,12 +109,9 @@
   margin-left: 255px;
 }
 
-
-
 //-------------------Media 1200px------------------//
 
 .slick__arrow--prev {
-
   @include xl {
     position: absolute;
     top: 39%;
@@ -135,15 +131,13 @@
 
     &:hover {
       -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2);
     }
   }
-
 }
 
 .slick__arrow--next {
-
   @include xl {
     position: absolute;
     top: 39%;
@@ -159,16 +153,15 @@
     background: $text-color--main;
     border-radius: 50%;
     box-shadow: 0 0 15px $color-shadow;
-    cursor: pointer;
     transform: rotate(180deg);
+    cursor: pointer;
 
     &:hover {
       -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2);
     }
   }
-
 }
 
 //-------------------Media 992px------------------//
@@ -180,10 +173,6 @@
   }
 }
 
-
-
-
-
 //-------------------Media 576px------------------//
 
 .button__intro--calc,
@@ -192,7 +181,6 @@
     width: 180px;
   }
 }
-
 
 .button {
   @include sm {
@@ -221,4 +209,18 @@
       display: none;
     }
   }
+}
+
+.slick__arrow--prev-mob,
+.slick__arrow--next-mob {
+  @include md {
+    top: 40%;
+  }
+  @include sm-1 {
+    top: 38%;
+  }
+}
+
+.slick__arrow--prev-mob {
+  left: 82%;
 }
