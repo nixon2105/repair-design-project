@@ -2897,9 +2897,6 @@ th {
 }
 
 .footer__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2907,5 +2904,9 @@ th {
       -ms-flex-align: center;
           align-items: center;
   padding: 22px 100px 22px 85px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
