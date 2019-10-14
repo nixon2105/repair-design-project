@@ -2570,12 +2570,11 @@ th {
   font-family: "FuturaBookC", Arial, sans-serif;
   text-align: center;
   color: #363636;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .reviews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -2584,6 +2583,10 @@ th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 63px 0 100px 95px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .reviews__item {
@@ -2591,13 +2594,14 @@ th {
 }
 
 .reviews__author {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .reviews__photo {
@@ -2611,20 +2615,21 @@ th {
   line-height: 23px;
   font-family: "Yeseva One", Arial, sans-serif;
   color: #181818;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .reviews__text {
   font-size: 15px;
   line-height: 27px;
   font-family: "FuturaBookC", Arial, sans-serif;
-  color: #959595;
+  color: #363636;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .reviews__time {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2638,16 +2643,23 @@ th {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #e3b873;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .reviews__time--area,
 .reviews__time--day {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .reviews__time--area img {

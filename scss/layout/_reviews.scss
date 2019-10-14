@@ -6,7 +6,7 @@
 .section__title--reviews {
   margin-bottom: 30px;
 
-  color: $primary-text-color;
+  color: $text-color--darken;
 }
 
 .section__text--reviews {
@@ -16,14 +16,17 @@
   line-height: 27px;
   font-family: $font-family-2;
   text-align: center;
-  color: $primary-text-color;
+  color: $text-color--darken;
+
+  @include font;
 }
 
 .reviews {
-  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 63px 0 100px 95px;
+
+  @include flexbox;
 }
 
 .reviews__item {
@@ -31,9 +34,10 @@
 }
 
 .reviews__author {
-  display: flex;
   align-items: center;
   margin-bottom: 40px;
+
+  @include flexbox;
 }
 
 .reviews__photo {
@@ -47,20 +51,23 @@
   font-size: 18px;
   line-height: 23px;
   font-family: $font-family-5;
-  color: #181818;
+  color: $text-color--darkest;
+
+  @include font;
 }
 
 .reviews__text {
   font-size: 15px;
   line-height: 27px;
   font-family: $font-family-2;
-  color: #959595;
+  color: $text-color--darken;
+
+  @include font;
 }
 
 .reviews__time {
   position: relative;
 
-  display: flex;
   align-items: center;
   width: 294px;
   height: 54px;
@@ -70,21 +77,27 @@
   font-size: 17px;
   line-height: 24px;
   font-family: $font-family-5;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
 
-  background-color: $secondary-text-color;
+  background-color: $text-color--main;
+
+  @include flexbox;
+  @include font;
 }
+
 .reviews__time--area,
 .reviews__time--day {
-  display: flex;
   align-items: center;
+
+  @include flexbox;
 }
 
 .reviews__time--area {
   img {
     padding: 0 17px 0 15px;
   }
+
   p {
     padding-right: 31px;
   }
@@ -100,7 +113,7 @@
     width: 2px;
     height: 54px;
 
-    background: $white-text-color;
+    background: $text-color--light;
   }
 }
 
