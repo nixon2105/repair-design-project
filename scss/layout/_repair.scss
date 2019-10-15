@@ -1,8 +1,13 @@
 .section--repair {
   width: 100%;
-  // height: 712px;
-  // margin: 0 auto;
   margin-bottom: 124px;
+
+  @include sm {
+    margin-bottom: 180px;
+  }
+  @include sm-1 {
+    margin-bottom: 100px;
+  }
 }
 
 .section__title--repair {

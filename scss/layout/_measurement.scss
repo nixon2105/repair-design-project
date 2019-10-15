@@ -6,6 +6,13 @@
   #131313 87.63%,
   #ffffff 87.63%
   );
+
+  @include sm {
+    background: linear-gradient(to top, #131313 42.26%, #ffffff 42.26%);
+  }
+  @include sm-1 {
+    background: linear-gradient(to top, #131313 31.26%, #ffffff 31.26%);
+  }
 }
 
 .gallery {
@@ -17,19 +24,97 @@
   background-position: 0 128px;
 
   @include flexbox;
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    height: 430px;
+
+    background: none;
+  }
+  @include sm-1 {
+    height: 381px;
+  }
 }
 
 .gallery__item {
   flex-direction: column;
+  margin-right: 128px;
 
-  @include flexbox;
-
-  &:last-child {
-    margin-right: 100px;
+  @include xl {
+    margin-right: 75px;
   }
+  @include sm {
+    width: 100%;
+  }
+  @include flexbox;
 
   &:first-child {
     margin-right: 176px;
+
+    @include xl {
+      margin-right: 20px;
+    }
+    @include sm-1 {
+      margin-right: 50px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-right: 40px;
+
+    @include lg {
+      margin-right: 100px;
+    }
+    @include md {
+      margin-right: 50px;
+    }
+    @include sm {
+      display: none;
+    }
+    @include sm-1 {
+      display: none;
+    }
+  }
+
+  &:nth-child(3) {
+    margin-right: 100px;
+
+    @include xl {
+      margin-right: 55px;
+    }
+    @include lg {
+      display: none;
+    }
+    @include md {
+      display: none;
+    }
+    @include sm {
+      display: none;
+    }
+    @include sm-1 {
+      display: none;
+    }
+  }
+}
+
+.gallery__slider {
+  position: relative;
+
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.slide__mob {
+  @include sm {
+    width: 430px;
+    margin-bottom: 20px;
+  }
+  @include sm-1 {
+    width: 340px;
+    margin-bottom: 0;
   }
 }
 
@@ -45,11 +130,49 @@
   text-transform: uppercase;
 
   @include font;
+  @include xl {
+    margin-left: 50px;
+  }
+  @include lg {
+    margin-left: 80px;
+
+    font-size: 25px;
+  }
+  @include md {
+    margin-left: 54px;
+  }
+  @include sm {
+    margin-top: 0;
+
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  @include sm-1 {
+    margin-top: 42px;
+
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .gallery__list {
   width: 180px;
   margin-left: 99px;
+
+  @include xl {
+    margin-left: 50px;
+  }
+  @include lg {
+    margin-left: 80px;
+  }
+  @include md {
+    margin-left: 54px;
+  }
+  @include sm {
+    display: none;
+  }
 }
 
 .nav__item--gallery {
@@ -108,6 +231,9 @@
   flex-direction: column;
 
   @include flexbox;
+  @include sm {
+    display: none;
+  }
 }
 
 .gallery__image {
