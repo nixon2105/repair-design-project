@@ -3,14 +3,20 @@
   margin: 0 auto;
   margin-top: 117px;
 
-  background: linear-gradient(
-  to top,
+  background: linear-gradient(to top,
   $primary-color 72%,
-  $text-color--light 28%
-  );
+  $text-color--light 28%);
 
   @include xl {
-    background: linear-gradient(to top, #252525 83%, #ffffff 28%);
+    background: linear-gradient(to top, $primary-color 83%, #ffffff 28%);
+  }
+  @include md {
+    background: linear-gradient(to top, $primary-color 87%, #ffffff 28%);
+  }
+  @include sm {
+    margin-top: 0;
+
+    background: $primary-color;
   }
 }
 
@@ -18,6 +24,13 @@
   margin-bottom: 30px;
 
   color: $text-color--darkest;
+
+  @include sm {
+    padding-top: 50px;
+
+    font-size: 22px;
+    color: $text-color--light;
+  }
 }
 
 .section__text {
@@ -29,6 +42,14 @@
   text-align: center;
   color: $text-color--darken;
 
+  @include sm {
+    width: 340px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color--light;
+  }
   @include font;
 }
 
@@ -39,12 +60,32 @@
   margin: 40px 100px 31px 102px;
 
   @include flexbox;
+  @include lg {
+    margin: 40px 86px 38px 86px;
+  }
+  @include sm {
+    margin: 40px 17px 38px 18px;
+  }
 }
 
 .desing__item {
   position: relative;
 
   width: 392px;
+
+  &:first-child {
+    @include md {
+      margin: 0 auto;
+      margin-bottom: 150px;
+    }
+  }
+
+  &:nth-child(2) {
+    @include md {
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
 
   &:last-child {
     @include xl {
@@ -57,8 +98,11 @@
 
 .desing__photo {
   display: block;
-  max-width: 100%;
   height: auto;
+
+  @include sm-1 {
+    width: 340px;
+  }
 }
 
 .desing__content {
@@ -71,6 +115,12 @@
 
   background-color: $text-color--light;
 
+  @include sm-1 {
+    left: 0;
+
+    width: 270px;
+  }
+
   h4 {
     padding: 25px 68px 13px 34px;
 
@@ -80,6 +130,10 @@
     color: $text-color--darken;
 
     @include font;
+    @include sm-1 {
+      font-size: 15px;
+      line-height: 21px;
+    }
   }
 
   ul {
@@ -94,6 +148,10 @@
     color: $text-color--dark;
 
     @include font;
+    @include sm-1 {
+      font-size: 13px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -108,6 +166,13 @@
 
   background-color: $text-color--main;
 
+  @include sm-1 {
+    left: 0;
+
+    width: 190px;
+    height: 40px;
+  }
+
   p {
     padding-top: 17px;
 
@@ -119,6 +184,18 @@
     text-transform: uppercase;
 
     @include font;
+    @include sm-1 {
+      padding-top: 11px;
+
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+}
+
+.goal {
+  @include sm {
+    display: none;
   }
 }
 
@@ -151,6 +228,13 @@
   color: $text-color--light;
   text-transform: uppercase;
 
+  @include md {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @include sm {
+    display: none;
+  }
   @include font;
 }
 
@@ -165,6 +249,13 @@
   color: $text-color--main;
   text-transform: uppercase;
 
+  @include md {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @include sm {
+    display: none;
+  }
   @include font;
 
   &:after {
@@ -179,6 +270,10 @@
     height: 1px;
 
     background: $text-color--main;
+
+    @include md {
+      display: none;
+    }
   }
 }
 
@@ -190,6 +285,13 @@
   font-family: $font-family-2;
   color: $text-color--light;
 
+  @include md {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  @include sm {
+    display: none;
+  }
   @include font;
 
   span {
@@ -203,6 +305,10 @@
     text-transform: uppercase;
 
     @include font;
+    @include md {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   h3 {
@@ -219,6 +325,13 @@
   }
 }
 
+.pagination--desing {
+  @include md {
+    display: none;
+  }
+}
+
+
 .pagination__item--add {
   &:nth-child(2),
   &:nth-child(3),
@@ -233,7 +346,26 @@
 
     background-color: $text-color--dark-transparent;
     border-radius: 50%;
+
+    &:nth-child(2):hover,
+    &:nth-child(3):hover,
+    &:nth-child(4):hover,
+    &:nth-child(5):hover,
+    &:nth-child(6):hover,
+    &:nth-child(7):hover {
+      background-color: $text-color--light;
+    }
   }
+}
+
+.pagination__item--add-active {
+  width: 10px;
+  height: 10px;
+
+  color: transparent;
+
+  background-color: $text-color--light;
+  border-radius: 50%;
 }
 
 .works {
@@ -245,6 +377,9 @@
   @include flexbox;
   @include xl {
     width: 64%;
+  }
+  @include sm {
+    display: none;
   }
 }
 
@@ -267,6 +402,10 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+  @include lg {
+    flex-flow: row wrap;
+    width: 500px;
+  }
 }
 
 .step__item {
@@ -275,9 +414,16 @@
   font-family: $font-family-2;
   color: $text-color--light;
 
+  cursor: pointer;
   opacity: 0.6;
 
+  transition: opacity 0.2s linear;
+
   @include font;
+
+  &:hover {
+    opacity: 1;
+  }
 
   &:nth-child(1),
   &:nth-child(4) {
@@ -288,6 +434,10 @@
     @include xl {
       flex: 0 1 135px;
       margin: 0;
+    }
+    @include lg {
+      flex: 0 1 127px;
+      margin: 0 50px 0 0;
     }
   }
 
@@ -300,6 +450,10 @@
     @include xl {
       flex: 0 1 80px;
       margin: 0;
+    }
+    @include lg {
+      flex: 0 1 136px;
+      margin: 0 50px 0 0;
     }
   }
 
@@ -317,7 +471,13 @@
 }
 
 .step__num {
+  padding-bottom: 2px;
+
   border-bottom: 1px solid $text-color--main;
+}
+
+.step__text {
+  padding-top: 10px;
 }
 
 .works__photo {
@@ -326,6 +486,15 @@
   img {
     @include xl {
       width: 725px;
+    }
+    @include lg {
+      width: 560px;
+    }
+    @include md {
+      width: 465px;
+    }
+    @include sm {
+      display: none;
     }
   }
 }
