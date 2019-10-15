@@ -364,35 +364,32 @@
     <div class="inner">
       <div class="build">
         <div class="build__content">
+          <div class="build__diagram">
 
-          <div class="build__item">
-            <div class="build__text build__text--one">
-              <p class="build__text build__text-number ">01</p>
-              <p>Our specialist will arrive for measurements per day<br>
-                contact, or appoint a date convenient for you</p>
+            <div class="build__item">
+              <p class="build__num">01</p>
+              <p class="build__text ">Our specialist will arrive for
+                 measurements per day contact, or appoint a date convenient for you</p>
             </div>
-          </div>
 
-          <div class="build__item">
-            <div class="build__text build__text--two">
-              <p class="build__text build__text-number ">02</p>
-              <p>Free metering</p>
+            <div class="build__item">
+              <p class="build__num">02</p>
+              <p class="build__text ">Free metering</p>
             </div>
-          </div>
 
-          <div class="build__item">
-            <div class="build__text build__text--three">
-              <p class="build__text build__text-number">03</p>
-              <p>Free consultation</p>
+            <div class="build__item">
+              <p class="build__num">03</p>
+              <p class="build__text ">Free consultation</p>
             </div>
-          </div>
 
-          <div class="build__item">
-            <div class="build__text build__text--four">
-              <p class="build__text build__text-number ">04</p>
-              <p>Get a cost estimate and<br>
-                the timing of your future repairs</p>
+            <div class="build__item">
+              <div class="build__num--count">
+                  <p class="build__num">04</p>
+              </div>
+              <p class="build__text ">Get a cost estimate and <br> the 
+                timing of your future repairs</p>
             </div>
+
           </div>
         </div>
         <!--/.build__content-->
@@ -405,21 +402,21 @@
             <form class="build__form" action="#" method="POST">
               <div class="form-col">
                 <label for="text">Name</label>
-                <input type="text" required placeholder="What is your name:" />
+                <input type="text"  name="user-name" placeholder="What is your name:" required/>
               </div>
 
               <div class="form-col">
                 <label for="tel">Phone</label>
-                <input type="tel" required placeholder="Your phone number:" />
+                <input type="tel" name="number" placeholder="Your phone number:" required/>
               </div>
 
               <div class="form-col">
-                <label for="tel">Email</label>
-                <input type="tel" required placeholder="Your email:" />
+                <label for="email">Email</label>
+                <input type="email" name="email"  placeholder="Your email:" required/>
               </div>
 
               <div class="build__form--checkbox">
-                <input class="number" id="num" type="checkbox" name="num" />
+                <input class="number" id="num" type="checkbox" name="num"  required/>
                 <label for="num">I agree to the processing of personal data</label>
               </div>
 
@@ -436,6 +433,7 @@
         </div>
         <!--/.build__form-->
       </div>
+    
       <!--/.build-->
     </div>
     <!--/.inner-->

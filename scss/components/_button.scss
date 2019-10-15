@@ -31,11 +31,11 @@
 
   color: $text-color--light;
 
-  background: $secondary-text-color;
+  background: $text-color--main;
 
   &:hover {
     background: transparent;
-    border-color: $secondary-text-color;
+    border-color: $text-color--main;
   }
 }
 
@@ -55,7 +55,7 @@
   transition: all 500ms ease;
 
   &:hover {
-    background: $secondary-text-color;
+    background: $text-color--main;
     border: none;
   }
 }
@@ -97,10 +97,10 @@
   line-height: 26px;
   font-family: $font-family-1;
   text-align: center;
-  color: $white-text-color;
+  color: $text-color--light;
   text-transform: uppercase;
 
-  background: $secondary-text-color;
+  background: $text-color--main;
   border: none;
 
   @include sm {

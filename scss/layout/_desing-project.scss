@@ -3,9 +3,11 @@
   margin: 0 auto;
   margin-top: 117px;
 
-  background: linear-gradient(to top,
+  background: linear-gradient(
+  to top,
   $primary-color 72%,
-  $text-color--light 28%);
+  $text-color--light 28%
+  );
 }
 
 .section__title--desing {

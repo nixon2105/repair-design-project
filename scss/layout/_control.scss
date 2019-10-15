@@ -101,7 +101,7 @@
   line-height: 34px;
   font-family: $font-family-2;
   text-align: center;
-  color: $primary-text-color;
+  color: $text-color--darken;
 
   @include font;
   @include md {
@@ -183,7 +183,7 @@
     font-size: 18px;
     line-height: 24px;
     font-family: $font-family-2;
-    color: $primary-text-color;
+    color: $text-color--darken;
 
     @include font;
     @include sm-1 {
@@ -195,7 +195,7 @@
     font-size: 18px;
     line-height: 24px;
     font-family: $font-family-2;
-    color: $primary-text-color;
+    color: $text-color--darken;
 
     @include font;
     @include sm-1 {
@@ -207,7 +207,7 @@
     font-size: 18px;
     line-height: 24px;
     font-family: $font-family-2;
-    color: $primary-text-color;
+    color: $text-color--darken;
 
     @include sm-1 {
       color: $text-color--light;
