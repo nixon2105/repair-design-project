@@ -131,6 +131,7 @@
   height: 54px;
 
   background-color: $text-color--main;
+  box-shadow: 5px 5px 10px $color-shadow-repair;
 
   @include sm-1 {
     top: 137%;

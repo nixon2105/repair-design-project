@@ -3,9 +3,11 @@
   margin: 0 auto;
   margin-top: 117px;
 
-  background: linear-gradient(to top,
+  background: linear-gradient(
+  to top,
   $primary-color 72%,
-  $text-color--light 28%);
+  $text-color--light 28%
+  );
 
   @include xl {
     background: linear-gradient(to top, $primary-color 83%, #ffffff 28%);
@@ -165,6 +167,7 @@
   height: 54px;
 
   background-color: $text-color--main;
+  box-shadow: 5px 5px 10px $color-shadow-buuton;
 
   @include sm-1 {
     left: 0;
@@ -330,7 +333,6 @@
     display: none;
   }
 }
-
 
 .pagination__item--add {
   &:nth-child(2),
