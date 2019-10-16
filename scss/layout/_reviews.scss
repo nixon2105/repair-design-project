@@ -31,8 +31,15 @@
   margin: 63px 0 100px 95px;
 
   @include flexbox;
+  @include xl {
+    flex-wrap: nowrap;
+  }
   @include lg {
     margin: 63px 66px 100px 54px;
+
+    @include xl {
+      flex-wrap: wrap;
+    }
   }
 }
 
