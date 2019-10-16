@@ -34,6 +34,7 @@
   color: $text-color--light;
 
   background: $text-color--main;
+  cursor: pointer;
 
   &:hover {
     background: transparent;
@@ -111,6 +112,7 @@
   background: $text-color--main;
   border: none;
   box-shadow: 0 15px 15px $color-shadow-buuton;
+  cursor: pointer;
 
   @include sm {
     order: 4;
@@ -153,6 +155,7 @@
 .button__submit--build {
   width: 213px;
   margin-left: 255px;
+  cursor: pointer;
 }
 
 .slick__arrow--prev,
@@ -217,12 +220,14 @@
 .slick__arrow--next {
   @include lg {
     top: 30%;
+    cursor: pointer;
   }
 }
 
 .slick__arrow--prev-mob,
 .slick__arrow--next-mob {
   @include md {
+    cursor: pointer;
     top: 40%;
   }
   @include sm-1 {
@@ -232,4 +237,5 @@
 
 .slick__arrow--prev-mob {
   left: 82%;
+  cursor: pointer;
 }
