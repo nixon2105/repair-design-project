@@ -31,10 +31,30 @@
   margin: 63px 0 100px 95px;
 
   @include flexbox;
+  @include lg {
+    margin: 63px 66px 100px 54px;
+  }
 }
 
 .reviews__item {
-  width: 33.333%;
+  width: 376px;
+
+  &:first-child {
+    @include md {
+      margin: 0 auto 70px;
+    }
+  }
+  &:nth-child(2) {
+    @include md {
+      margin: 0 auto;
+    }
+  }
+
+  &:nth-child(3) {
+    @include lg {
+      margin: 70px auto;
+    }
+  }
 }
 
 .reviews__author {
