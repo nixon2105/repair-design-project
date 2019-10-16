@@ -7,6 +7,15 @@
   background-repeat: no-repeat;
   background-position: center 230px;
   background-size: 100% 100%;
+
+  @include md {
+    background-color: $primary-color;
+    background-image: none;
+    background-position: center;
+  }
+  @include sm {
+    margin-top: -106px;
+  }
 }
 
 .contacts {
@@ -20,6 +29,16 @@
   width: 883px;
 
   background-color: $primary-color;
+
+  @include md {
+    width: 600px;
+  }
+  @include sm {
+    width: 500px;
+  }
+  @include sm-1 {
+    width: 350px;
+  }
 }
 
 .contacts__form-title {
@@ -34,6 +53,9 @@
   text-transform: uppercase;
 
   @include font;
+  @include md {
+    padding-top: 163px;
+  }
 }
 
 .form__questions {
@@ -42,6 +64,12 @@
   width: 520px;
   margin: 0 auto;
 
+  @include md {
+    width: 420px;
+  }
+  @include sm-1 {
+    width: 340px;
+  }
   @include flexbox;
 }
 
@@ -51,6 +79,9 @@
   padding-bottom: 45px;
 
   @include flexbox;
+  @include sm-1 {
+    width: 340px;
+  }
 
   input {
     background-color: $primary-color;
@@ -58,6 +89,13 @@
     border-top: none;
     border-right: none;
     border-left: none;
+
+    @include sm-1 {
+      border: 1px solid $text-color--light;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+    }
   }
 
   label {
@@ -166,7 +204,20 @@
   color: $text-color--main;
   text-transform: uppercase;
 
+  @include sm-1 {
+    order: 2;
+    margin-top: 0;
+  }
+  @include sm-1 {
+    width: 340px;
+
+    font-size: 18px;
+    line-height: 25px;
+  }
   @include font;
+  a {
+    color: $text-color--main;
+  }
 }
 
 .contacts__social {
@@ -174,6 +225,9 @@
   margin: 26px auto 43px;
 
   @include flexbox;
+  @include sm-1 {
+    order: 3;
+  }
 }
 
 .social__link {
@@ -187,4 +241,31 @@
   background-color: $text-color--main;
   border-radius: 50%;
   cursor: pointer;
+  &:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.contacts__map {
+  @include sm-1 {
+    order: 1;
+  }
+  img {
+    @include md {
+      width: 600px;
+      height: 480px;
+      margin: 0 auto;
+
+      @include sm {
+        width: 545px;
+        height: 355px;
+      }
+      @include sm-1 {
+        width: 340px;
+        height: 255px;
+      }
+    }
+  }
 }

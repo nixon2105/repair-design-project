@@ -858,18 +858,18 @@
           <form class="form__questions" action="#" method="POST">
             <div class="form__data">
               <label for="text">Name</label>
-              <input type="text" required placeholder="What is your name:" />
+              <input type="text" name="user-name" placeholder="What is your name:" required/>
             </div>
             <div class="form__data">
               <label for="tel">Phone</label>
-              <input type="tel" required placeholder="Your phone number:" />
+              <input type="tel" name="phone" placeholder="Your phone number:" required/>
             </div>
             <div class="form__data form__data--quest">
-              <label for="tel">Question</label>
-              <input type="tel" required placeholder="I want to know:" />
+              <label for="text">Question</label>
+              <input type="text" name="questions" placeholder="I want to know:" required/>
             </div>
             <div class="form__data--checkbox">
-              <input class="number" id="quest" type="checkbox" name="num" />
+              <input class="number" id="quest" type="checkbox" name="num" required/>
               <label for="quest">I agree to the processing of personal data</label>
             </div>
             <button class="button__submit button__submit--center" type="submit">submit</button><br />
@@ -878,7 +878,7 @@
 
         <div class="contacts__info">
           <h3 class="contacts__address">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
-            Decorum Tel +7 (928) 768 32 29</h3>
+            Decorum <a href="tel:79287683239">Tel +7 (928) 768 32 29</a></h3>
           <div class="contacts__social">
             <div class="social__link"> <a href=""><img src="assets/images/footer/email_icon.svg" alt=""></a></div>
             <div class="social__link"> <a href="https://www.instagram.com"><img
@@ -905,27 +905,28 @@
 
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item nav__item_state_active">
-                <a class="nav__link" href="#">home</a>
+              <li class="nav__item" data-scroll="#home">
+                <a class="nav__link nav__link--current" href="#">home</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item" data-scroll="#project">
                 <a class="nav__link" href="">project</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item" data-scroll="#measurement">
                 <a class="nav__link" href="">measurement</a>
               </li>
-              <li class="nav__item"><a class="nav__link" href="">team</a></li>
-              <li class="nav__item">
+              <li class="nav__item" data-scroll="#team">
+                <a class="nav__link" href="">team</a></li>
+              <li class="nav__item" data-scroll="#reviews">
                 <a class="nav__link" href="">reviews</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item" data-scroll="#contacts">
                 <a class="nav__link" href="">contacts</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="">+7(928)768-32-39</a>
+              <li class="nav__item nav__item--mobile">
+                <a class="nav__link nav__link--active" href="tel:79287683239">+7(928)768-32-39</a>
               </li>
               <li class="nav__item">
-                <button class="button" type="button">request a call</button>
+                <button class="button button__header" type="button">request a call</button>
               </li>
             </ul>
           </nav>
