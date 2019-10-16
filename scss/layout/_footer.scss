@@ -4,4 +4,7 @@
   padding: 22px 100px 22px 85px;
 
   @include flexbox;
+  @include lg {
+    display: none;
+  }
 }

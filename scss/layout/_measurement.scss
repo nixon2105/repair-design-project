@@ -1,15 +1,25 @@
 .section--gallery {
-  background: linear-gradient(to top,
-  #ffffff 4.12%,
+  background: linear-gradient(
+  to top,
+  $text-color--light 4.12%,
   $primary-color 4.12%,
   $primary-color 87.63%,
-  #ffffff 87.63%);
+  $text-color--light 87.63%
+  );
 
   @include sm {
-    background: linear-gradient(to top, $primary-color 42.26%, #ffffff 42.26%);
+    background: linear-gradient(
+    to top,
+    $primary-color 42.26%,
+    $text-color--light 42.26%
+    );
   }
   @include sm-1 {
-    background: linear-gradient(to top, $primary-color 31.26%, #ffffff 31.26%);
+    background: linear-gradient(
+    to top,
+    $primary-color 31.26%,
+    $text-color--light 31.26%
+    );
   }
 }
 
@@ -17,7 +27,8 @@
   justify-content: space-between;
   height: 1036px;
 
-  background: url("../../dist/assets/images/Desing styles/bg.png") no-repeat center;
+  background: url("../../dist/assets/images/Desing styles/bg.png") no-repeat
+  center;
   background-position: 0 128px;
 
   @include flexbox;
@@ -179,6 +190,8 @@
   line-height: 33px;
   font-family: $font-family-4;
   color: $text-color--light;
+
+  cursor: pointer;
 
   @include font;
 

@@ -1,6 +1,10 @@
 .section--reviews {
   width: 100%;
   margin: 0 auto;
+
+  @include sm {
+    display: none;
+  }
 }
 
 .section__title--reviews {
